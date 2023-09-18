@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2 {
+.containerb h1, .containerb h2 {
   color: #00482B; /* Color de los títulos */
   text-align: center; /* Centrar el texto */
   margin: 20px 0; /* Agregar margen superior e inferior para separarlos del contenido */
@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 /* Estilo para el texto */
-p {
+.containerb p {
   text-align: center; /* Centrar el texto */
   margin: 0 80px; /* Agregar margen a los lados para evitar que llegue a los bordes */
   margin-bottom: 20px;
