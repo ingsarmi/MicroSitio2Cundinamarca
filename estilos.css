@@ -1,0 +1,333 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Color de fondo de la página */
+}
+
+.container {
+    max-width: 1080px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px; /* Agrega espacio entre las secciones */
+}
+
+/* Estilos específicos para cada sección, como se mencionaron anteriormente */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para la Sección 2 */
+.seccion1 {
+    display: flex;
+    background-color: #4D4D4D;
+    color: #FFF;
+    margin-bottom: 20px;
+    max-height: 417px; /* Altura máxima de la sección */
+    overflow: hidden; /* Oculta el contenido adicional si excede la altura máxima */
+}
+
+.columna1sec1 {
+    flex: 1;
+    padding: 0 px;
+    display: flex;
+    justify-content: flex-start; /* Alinea la imagen a la izquierda */
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+    overflow: hidden; /* Oculta cualquier contenido que desborde de la columna */
+}
+
+.columna1sec1 img {
+    max-height: 100%; /* La imagen se ajusta al 100% de la altura de la columna */
+    width: auto;
+    max-width: 100%; /* Ancho máximo relativo al 100% del ancho de la columna */
+}
+
+.columna2sec1 {
+    flex: 1;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.rectangulo {
+    width: 13.853px;
+    height: 114.085px;
+    background-color: #FBE122;
+    margin-right: 10px; /* Espacio entre el rectángulo y el contenido de texto */
+    margin-left: 10px; /* Espacio entre el rectángulo y la imagen */
+}
+
+.contenidosec1-columna2 h1,
+.contenidosec1-columna2 h2,
+.contenidosec1-columna2 p {
+    font-family: "Century Gothic", sans-serif; 
+    font-size: 58.08px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0px;
+}
+
+.contenidosec1-columna2 h1 {
+    color: #FFF;
+}
+
+.contenidosec1-columna2 h2 {
+    color: #00A99D;
+}
+
+.contenidosec1-columna2 p {
+    color: #FFF;
+    font-size: 16.298px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .seccion1 {
+        flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+        max-height: none; /* Eliminar la altura máxima en dispositivos móviles */
+    }
+
+    .columna1sec1, .columna2sec1 {
+        flex: auto; /* Hacer que ambas columnas se expandan automáticamente */
+        padding: 10px; /* Agregar espacio alrededor de las columnas en dispositivos móviles */
+        align-items: center; /* Centrar el contenido en ambas columnas */
+        text-align: center; /* Centrar el texto en ambas columnas */
+    }
+
+    .columna1sec1 img {
+        max-height: none; /* Eliminar la altura máxima de la imagen en dispositivos móviles */
+        max-width: 100%; /* Asegurarse de que la imagen se ajuste al ancho de la columna */
+    }
+
+    .rectangulo {
+        margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
+        margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+        margin-top: 10px; /* Agregar espacio entre el rectángulo y el contenido de texto en dispositivos móviles */
+    }
+
+    .contenidosec1-columna2 h1,
+    .contenidosec1-columna2 h2,
+    .contenidosec1-columna2 p {
+        font-size: 38.08px;
+        font-weight: 500;
+    }
+
+    .contenidosec1-columna2 p {
+        color: #FFF;
+        font-size: 10.298px;
+    }
+}
+    /* Estilo para la seccion 2 */
+/* Estilo para los botones */
+.boton-sec2 {
+    margin-bottom: 20px;
+    width: 145px;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background-color: #F4F4F4; /* Fondo del botón */
+    border: 2px solid #F4F4F4; /* Borde del botón */
+    margin-right: 10px; /* Espacio entre los botones */
+    color: #4D4D4D; /* Color de texto */
+    font-family: "Inter", sans-serif; /* Fuente del texto */
+    font-size: 15.224px; /* Tamaño de fuente */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilo para los botones cuando el mouse está encima */
+.boton-sec2:hover {
+    background-color: #00A99D; /* Cambia el fondo al pasar el cursor */
+    border-color: #00A99D; /* Mantén el borde con el mismo color */
+    color: #fff; /* Color de texto al pasar el cursor */
+}
+.boton-sec2 img {
+    max-width: 40.24px;
+    max-height: 48.03;
+    width: auto; /* Ajusta el ancho automáticamente para mantener la proporción */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    filter: grayscale(100%); /* Convierte la imagen a escala de grises */
+    transition: filter 0.3s ease-in-out; /* Agrega una transición suave */
+}
+
+.boton-sec2:hover .filtro:hover{
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(301deg) brightness(102%) contrast(101%);
+}
+.boton-sec2 .filtro{
+    filter: invert(29%) sepia(1%) saturate(1600%) hue-rotate(322deg) brightness(104%) contrast(97%);
+
+}
+
+.boton-sec2.activo {
+    background-color: #00A99D; /* Cambia el fondo al pasar el cursor */
+    border-color: #00A99D; /* Mantén el borde con el mismo color */
+    color: #fff; /* Color de texto al pasar el cursor */
+}
+.boton-sec2.activo img{
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(301deg) brightness(102%) contrast(101%);
+}
+.boton-sec2:hover img {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(301deg) brightness(102%) contrast(101%);
+}
+
+/* Estilo para el contenedor principal */
+.container-sec2 {
+    display: flex;
+}
+
+/* Estilo para el contenido en el lado derecho */
+.contenido-sec2 {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    align-items: left; /* Centra los elementos horizontalmente */
+    background: #F4F4F4; /* Color de fondo */
+    padding: 20px; /* Espacio interior dentro del contenido */
+    box-sizing: border-box; /* Incluye el padding en el ancho y alto total */
+    width: 100%; /* Ancho del 100% para ocupar todo el ancho de la pantalla */
+}
+
+/* Estilo para el título h2 */
+.contenido-sec2 h2 {
+    color: #4D4D4D;
+    font-family: 'Inter', sans-serif;
+    font-size: 19.553px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left; 
+}
+
+/* Estilo para el párrafo p */
+.contenido-sec2 p {
+    color: #4D4D4D;
+    font-family: 'Inter', sans-serif;
+    font-size: 14.408px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left; 
+}
+
+
+/* Estilo para la seccion 3 */
+
+/* Estilo para la seccion */
+.separador {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background: #4D4D4D; /* Fondo del separador */
+    width: 100%;
+    padding: 20px; /* Añade espacio interior */
+    box-sizing: border-box;
+}
+
+/* Estilo para la imagen */
+.separador img {
+    width: 82.965px; /* Nuevo tamaño para dispositivos móviles */
+    margin: 0; /* Elimina los márgenes para ajustar mejor en dispositivos móviles */
+}
+
+/* Estilo para el rectángulo */
+.separador .rectangulo {
+    width: 5px;
+    height: 62.777px;
+    background-color: #FBE122;
+    margin: 10px 0; /* Espacio superior e inferior */
+}
+
+/* Estilo para el texto */
+.separador .texto {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 10px 0; /* Espacio superior e inferior */
+}
+
+/* Estilo para el título h3 */
+.separador h3 {
+    color: #00A99D;
+    font-family: 'Lato', sans-serif;
+    font-size: 28.816px; /* Nuevo tamaño para dispositivos móviles */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+/* Estilo para el párrafo p */
+.separador p {
+    color: #4D4D4D;
+    font-family: 'Inter', sans-serif;
+    font-size: 14.408px; /* Nuevo tamaño para dispositivos móviles */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+
+
+/* Estilo para la seccion 4 */
+
+.seccion-texto {
+    background-color: #FFFFFF; /* Fondo de la sección */
+    padding-top: 10px; /* Espacio interno alrededor del contenido */
+}
+
+.seccion-texto h2 {
+    color: #00A99D;
+    font-family: 'Lato', sans-serif;
+    font-size: 28.816px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.seccion-texto p {
+    color: #4D4D4D;
+    font-family: 'Inter', sans-serif;
+    font-size: 14.408px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Estilo para la seccion 5 */
+
+.seccion-imagen-texto {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.seccion-imagen-texto img {
+    width: 82.965px;
+}
+
+.seccion-imagen-texto .texto {
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.seccion-imagen-texto .texto p {
+    color: #4D4D4D;
+    font-family: 'Lato', sans-serif;
+    font-size: 30.385px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
