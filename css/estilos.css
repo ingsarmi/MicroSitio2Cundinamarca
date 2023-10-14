@@ -14,13 +14,13 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-li{list-style:none}
+
 
 html {
   scroll-behavior: smooth;
 }
 
-.containerb h1, .containerb h2 {
+.containerb h1, .containerb h2{
   color: #00482B; /* Color de los títulos */
   text-align: center; /* Centrar el texto */
   margin: 20px 0; /* Agregar margen superior e inferior para separarlos del contenido */
@@ -32,8 +32,27 @@ html {
   text-align: center; /* Centrar el texto */
   margin: 0 80px; /* Agregar margen a los lados para evitar que llegue a los bordes */
   margin-bottom: 20px;
+  
 }
 
+.containerb ul {
+  margin-left: 20px; /* Margen izquierdo de la lista */
+  padding-left: 20px; /* Espacio adicional a la izquierda de la lista (igual que el margen izquierdo) */
+}
+
+.containerb ul li {
+  margin: 10px 0; /* Espacio entre elementos de la lista */
+}
+
+.containerb strong {
+  font-weight: bold; /* Texto en negrita para la libreta de calificaciones */
+}
+
+.custom-list {
+  list-style-type: disc; /* Tipo de viñetas para esta lista específica */
+  margin-left: 20px; /* Margen izquierdo para esta lista específica */
+  padding-left: 20px; /* Espacio adicional a la izquierda de la lista (igual que el margen izquierdo) */
+}
 /* canvas{
     display:block;
     vertical-align:bottom;
@@ -138,55 +157,59 @@ body {
 
 /* Estilos Productos */
 #productos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-  }
-  
-  .producto {
-    width: 400px;
-    margin: 20px;
-    padding: 30px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-  }
-  
-  .producto img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .producto h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .producto p {
-    font-size: 1rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    margin: 0 0px; /* Agregar margen a los lados para evitar que llegue a los bordes */
-    margin-bottom: 20px;
-  }
-  
-  .producto a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    
-  }
-  
-  .producto a:hover {
-    background-color: #007b3e;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.producto h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.producto p {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  margin: 0 20px; /* Agregar margen a los lados para evitar que llegue a los bordes */
+  height: 640px;
+}
+
+.producto a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.producto a:hover {
+  background-color: #007b3e;
+}
+
   
 
  /* Estilos Footer */
